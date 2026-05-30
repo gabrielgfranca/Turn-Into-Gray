@@ -1,16 +1,15 @@
 # turnIntoGray
-
-Projeto desenvolvido para praticar a linguagem C e a manipulação de imagens diretamente via código, sem o uso de bibliotecas externas de processamento. O programa converte uma imagem colorida para escala de cinza aplicando a fórmula de luminância perceptual:
+Project developed to practice the C language and image manipulation directly via code, without the use of external processing libraries. The program converts a color image to grayscale using the perceptual luminance formula:
 
 ```
 gray = 0.299×R + 0.587×G + 0.114×B
 ```
 
-> - **Formato suportado:** apenas imagens PPM (P6).\
-> - As imagens do README estão em PNG pois o GitHub não renderiza PPM.\
-> - Os arquivos originais `.ppm` e são ignorados pelo `.gitignore`
+> - **Supported format:** PPM (P6) images only.\
+> - README images are in PNG because GitHub does not render PPM.\
+> - The original `.ppm` files are ignored by `.gitignore`.
 
-## Compilando
+## Compiling
 
 ```bash
 cmake -B build
@@ -18,15 +17,14 @@ cmake --build build
 ./build/turnIntoGray <imagem.ppm>
 ```
 
-A imagem convertida é salva no mesmo diretório com o sufixo `_gray`:
-
+The converted image is saved in the same directory with the `_gray` suffix:
 ```
 imagem.ppm → imagem_gray.ppm
 ```
 
-## Exemplos
+## Examples
 
-| Antes | Depois |
+| Before | After |
 |-------|--------|
 | ![](image.png) | ![](image_gray.png) |
 | ![](image2.png) | ![](image2_gray.png) |
