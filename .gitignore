@@ -25,3 +25,7 @@ _deps/
 *.swp
 *.swo
 
+# Images files
+*.ppm
+*.png
+
